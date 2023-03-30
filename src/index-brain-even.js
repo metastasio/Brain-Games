@@ -16,7 +16,7 @@ const brainEven = () => {
 
     if (answer.toLowerCase() !== 'yes' && answer.toLowerCase() !== 'no') {
       console.log(
-        `'${answer}' is the wrong answer ;(. The answer should be 'yes' or 'no'.\n Let's try again, ${userName}!`
+        `'${answer}' is wrong answer ;(. \n Let's try again, ${userName}!`
       );
       count = 0;
       let randomNumder = Math.floor(Math.random() * 100) + 1;
@@ -41,7 +41,7 @@ const brainEven = () => {
         let randomNumder = Math.floor(Math.random() * 100) + 1;
       } else if (randomNumder % 2 === 0) {
         console.log(
-          `'no' is wrong answer ;(. Correct answer was 'yes'.\n Let's try again, ${userName}`
+          `'no' is wrong answer ;(. Correct answer was 'yes'.\n Let's try again, ${userName}!`
         );
         count = 0;
         let randomNumder = Math.floor(Math.random() * 100) + 1;
