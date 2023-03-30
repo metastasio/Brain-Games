@@ -13,38 +13,37 @@ const brainEven = () => {
     let randomNumder = Math.floor(Math.random() * 100) + 1;
     console.log(`Question: ${randomNumder}`);
     const answer = readlineSync.question('Your answer: ');
+    const answerUnified = answer.toLowerCase();
+    const isEven = randomNumder % 2 === 0;
+    const isOdd = randomNumder % 2 !== 0;
 
-    if (answer.toLowerCase() !== 'yes' && answer.toLowerCase() !== 'no') {
+    if (answerUnified !== 'yes' && answerUnified !== 'no') {
       console.log(
         `'${answer}' is wrong answer ;(.\nLet's try again, ${userName}!`
       );
       count = 0;
-      let randomNumder = Math.floor(Math.random() * 100) + 1;
     }
 
-    if (answer.toLowerCase() === 'yes') {
-      if (randomNumder % 2 === 0) {
+    if (answerUnified === 'yes') {
+      if (isEven) {
         count++;
         console.log('Correct!');
-        let randomNumder = Math.floor(Math.random() * 100) + 1;
-      } else if (randomNumder % 2 !== 0) {
+      } else if (isOdd) {
         console.log(
           `'yes' is wrong answer ;(. Correct answer was 'no'.\nLet's try again, ${userName}!`
         );
         count = 0;
-        let randomNumder = Math.floor(Math.random() * 100) + 1;
       }
-    } else if (answer.toLowerCase() === 'no') {
-      if (randomNumder % 2 !== 0) {
+    } else if (answerUnified === 'no') {
+      if (isOdd) {
         count++;
         console.log('Correct!');
-        let randomNumder = Math.floor(Math.random() * 100) + 1;
-      } else if (randomNumder % 2 === 0) {
+      } else if (isEven) {
         console.log(
           `'no' is wrong answer ;(. Correct answer was 'yes'.\nLet's try again, ${userName}!`
         );
         count = 0;
-        let randomNumder = Math.floor(Math.random() * 100) + 1;
+        randomNumder = Math.floor(Math.random() * 100) + 1;
       }
     }
   }
