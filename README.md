@@ -6,5 +6,3 @@
 
 <b>Demo for brain-even:</b>
 [![asciicast](https://asciinema.org/a/GKMssgNGXBNruGbxgYmtTuF5y.svg)](https://asciinema.org/a/GKMssgNGXBNruGbxgYmtTuF5y)
-
-<a href="https://asciinema.org/a/GKMssgNGXBNruGbxgYmtTuF5y" target="_blank"><img src="https://asciinema.org/a/GKMssgNGXBNruGbxgYmtTuF5y.svg" /></a>
