@@ -1,4 +1,8 @@
 #!/usr/bin/env node
-import brainEven from '../src/index-brain-even.js';
 
+import { greetings, brainEvenRules, brainEven, gg } from '../src/index.js';
+
+greetings();
+brainEvenRules();
 brainEven();
+gg();
