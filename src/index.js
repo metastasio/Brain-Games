@@ -15,7 +15,7 @@ const greetings = () => {
 const getUserName = () => userName;
 
 // Get random number
-const getRandomNumber = () => Math.floor(Math.random() * 100) + 1;
+const getRandomNumber = () => Math.floor(Math.random() * 10) + 1;
 
 // Get random sign
 const getRandomSign = () => {
@@ -23,14 +23,6 @@ const getRandomSign = () => {
   const i = Math.floor(Math.random() * arr.length);
   const operator = arr[i];
   return operator;
-};
-
-// Game rules
-const brainEvenRules = () => {
-  console.log('Answer "yes" if the number is even, otherwise answer "no".');
-};
-const brainCalcRules = () => {
-  console.log('What is the result of the expression?');
 };
 
 // Answers
@@ -104,10 +96,9 @@ const brainCalc = () => {
 export {
   greetings,
   getUserName,
-  brainEvenRules,
-  brainCalcRules,
   brainCalc,
   gg,
+  getRandomSign,
   brainEven,
   getAnswer,
   getRandomNumber,

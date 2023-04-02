@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 
 import { greetings, gg } from '../src/index.js';
-import brainCalc from '../src/games/index-brain-calc.js';
+import brainGcd from '../src/games/index-brain-gcd.js';
 
 greetings();
-brainCalc();
+brainGcd();
 gg();
