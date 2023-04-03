@@ -14,7 +14,7 @@ A game is completed once you give 3 correct answers in a row. To exit a game sim
 
 ## Installation
 
-To install this game first install **Node.JS**.
+To be able to run these games you need to have **Node.JS** installed.
 
 ```
  git clone https://github.com/metastasio/frontend-project-44.git
@@ -28,7 +28,7 @@ To install this game first install **Node.JS**.
 <br>
 
 ## **Games**  ##
-
+***
 <br>
 
 ## Parity check
@@ -44,6 +44,7 @@ brain-even
 **Demo:**
 [![asciicast](https://asciinema.org/a/GKMssgNGXBNruGbxgYmtTuF5y.svg)](https://asciinema.org/a/GKMssgNGXBNruGbxgYmtTuF5y)
 <br>
+<br>
 
 ## Calculator
 
@@ -57,6 +58,7 @@ brain-calc
 
 **Demo:**
 [![asciicast](https://asciinema.org/a/rNZQQ8DPtMzXSnZFWWES2XkFt.svg)](https://asciinema.org/a/rNZQQ8DPtMzXSnZFWWES2XkFt)
+<br>
 <br>
 
 ## Greatest common divisor
@@ -72,6 +74,7 @@ brain-gcd
 **Demo:**
 [![asciicast](https://asciinema.org/a/G7LUehLbAbdVCG9l6W41GmSeH.svg)](https://asciinema.org/a/G7LUehLbAbdVCG9l6W41GmSeH)
 <br>
+<br>
 
 ## Arithmetic progression
 
@@ -85,6 +88,7 @@ brain-progression
 
 **Demo:**
 [![asciicast](https://asciinema.org/a/wZN4DEbTo4hLt5jp4gNDflpAc.svg)](https://asciinema.org/a/wZN4DEbTo4hLt5jp4gNDflpAc)
+<br>
 <br>
 
 ## Is this a prime number?
