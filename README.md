@@ -22,13 +22,13 @@ To install this game first install **Node.JS**.
  cd frontend-project-44
 
  make install
- 
+
  npm link
 ```
 <br>
 
 ## **Games**  ##
-***
+
 <br>
 
 ## Parity check
@@ -43,7 +43,6 @@ brain-even
 
 **Demo:**
 [![asciicast](https://asciinema.org/a/GKMssgNGXBNruGbxgYmtTuF5y.svg)](https://asciinema.org/a/GKMssgNGXBNruGbxgYmtTuF5y)
-***
 <br>
 
 ## Calculator
@@ -58,7 +57,6 @@ brain-calc
 
 **Demo:**
 [![asciicast](https://asciinema.org/a/rNZQQ8DPtMzXSnZFWWES2XkFt.svg)](https://asciinema.org/a/rNZQQ8DPtMzXSnZFWWES2XkFt)
-***
 <br>
 
 ## Greatest common divisor
@@ -73,7 +71,6 @@ brain-gcd
 
 **Demo:**
 [![asciicast](https://asciinema.org/a/G7LUehLbAbdVCG9l6W41GmSeH.svg)](https://asciinema.org/a/G7LUehLbAbdVCG9l6W41GmSeH)
-***
 <br>
 
 ## Arithmetic progression
@@ -88,7 +85,6 @@ brain-progression
 
 **Demo:**
 [![asciicast](https://asciinema.org/a/wZN4DEbTo4hLt5jp4gNDflpAc.svg)](https://asciinema.org/a/wZN4DEbTo4hLt5jp4gNDflpAc)
-***
 <br>
 
 ## Is this a prime number?
