@@ -25,8 +25,8 @@ const brainProgression = () => {
     };
     const arrToReplace = randomLine();
     const randomIndex = getRandomNumber();
-    const replacedIndex = arrToReplace[randomIndex];
-    arrToReplace[randomIndex] = '..';
+    const replacedIndex = arrToReplace[randomIndex - 1];
+    arrToReplace[randomIndex - 1] = '..';
 
     const currentExpression = arrToReplace.join(' ');
     questionText(currentExpression);
