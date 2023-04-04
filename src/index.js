@@ -36,6 +36,18 @@ const questionText = (task) => {
   console.log(`Question: ${task}`);
 };
 
+// RESULT
+
+const result = (isCorrect, answerUnified, correctAnswer) => {
+  if (isCorrect) {
+    console.log('Correct!');
+  } else {
+    console.log(
+      `'${answerUnified}' is wrong answer ;(. Correct answer was '${correctAnswer}'.\nLet's try again, ${getUserName()}!`,
+    );
+  }
+};
+
 // Congrats
 const gg = () => {
   console.log(`Congratulations, ${userName}!`);
@@ -49,4 +61,5 @@ export {
   getAnswer,
   getRandomNumber,
   questionText,
+  result,
 };

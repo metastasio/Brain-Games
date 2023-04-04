@@ -2,7 +2,8 @@ import {
   getRandomNumber,
   getAnswer,
   questionText,
-  getUserName,
+  result,
+  gg,
 } from '../index.js';
 
 // BRAIN PRIME
@@ -22,16 +23,15 @@ const brainPrime = () => {
       return num > 1;
     };
     const correctAnswer = isPrime(randomNumber) ? 'yes' : 'no';
-    if (answerUnified === correctAnswer) {
-      console.log('Correct!');
-      i++;
-    } else {
-      console.log(
-        `'${answerUnified}' is wrong answer ;(. Correct answer was '${correctAnswer}'.\nLet's try again, ${getUserName()}!`,
-      );
-      i = 0;
+    const isCorrect = answerUnified === correctAnswer;
+
+    result(isCorrect, answerUnified, correctAnswer);
+    if (!isCorrect) {
+      return;
     }
+    i++;
   }
+  gg();
 };
 
 export default brainPrime;

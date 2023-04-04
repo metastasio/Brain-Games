@@ -5,4 +5,3 @@ import brainGcd from '../src/games/index-brain-gcd.js';
 
 greetings();
 brainGcd();
-gg();

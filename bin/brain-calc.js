@@ -5,4 +5,3 @@ import brainCalc from '../src/games/index-brain-calc.js';
 
 greetings();
 brainCalc();
-gg();

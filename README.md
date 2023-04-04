@@ -57,7 +57,7 @@ brain-calc
 ```
 
 **Demo:**
-[![asciicast](https://asciinema.org/a/rNZQQ8DPtMzXSnZFWWES2XkFt.svg)](https://asciinema.org/a/rNZQQ8DPtMzXSnZFWWES2XkFt)
+[![asciicast](https://asciinema.org/a/LBzHuMH4N7XJcNGyGrw64CVrj.svg)](https://asciinema.org/a/LBzHuMH4N7XJcNGyGrw64CVrj)
 <br>
 <br>
 
