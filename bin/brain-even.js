@@ -5,4 +5,3 @@ import brainEven from '../src/games/index-brain-even.js';
 
 greetings();
 brainEven();
-
