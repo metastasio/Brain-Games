@@ -20,14 +20,14 @@ const brainGcd = () => {
     questionText(currentExpression);
     const userAnswer = getAnswer();
     const answerUnified = Number(userAnswer);
+
     const expression = (a, b) => {
-      while (b) {
-        const num = b;
-        b = a % b;
-        a = num;
+      if (!b) {
+        return a;
       }
-      return a;
+      return expression(b, a % b);
     };
+
     const correctAnswer = expression(randomNumber, randomNumber2);
     const isCorrect = answerUnified === correctAnswer;
 
@@ -35,7 +35,7 @@ const brainGcd = () => {
     if (!isCorrect) {
       return;
     }
-    i++;
+    i += 1;
   }
   gg();
 };

@@ -18,7 +18,7 @@ const brainProgression = () => {
       let newLine = 0;
       const arr = [];
 
-      for (let j = 0; j < 10; j++) {
+      for (let j = 0; j < 10; j += 1) {
         newLine += randomNumber;
         arr.push(newLine);
       }
@@ -40,7 +40,7 @@ const brainProgression = () => {
     if (!isCorrect) {
       return;
     }
-    i++;
+    i += 1;
   }
   gg();
 };

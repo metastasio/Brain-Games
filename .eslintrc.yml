@@ -20,6 +20,4 @@ rules:
     - error
     - ignorePackages
     - js: always
-  no-plusplus: 0
-  no-eval: 0
   no-underscore-dangle: [2, { 'allow': ['__filename', '__dirname'] }]

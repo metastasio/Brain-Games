@@ -22,14 +22,15 @@ const brainCalc = () => {
     questionText(currentExpression);
     const userAnswer = getAnswer();
     const answerUnified = Number(userAnswer);
-    const correctAnswer = eval(currentExpression);
+    // eslint-disable-next-line no-new-func
+    const correctAnswer = Function(`return + ${currentExpression}`)();
     const isCorrect = answerUnified === correctAnswer;
 
     result(isCorrect, userAnswer, correctAnswer);
     if (!isCorrect) {
       return;
     }
-    i++;
+    i += 1;
   }
   gg();
 };

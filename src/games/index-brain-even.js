@@ -25,7 +25,7 @@ const brainEven = () => {
     if (!isCorrect) {
       return;
     }
-    i++;
+    i += 1;
   }
   gg();
 };
