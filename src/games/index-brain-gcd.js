@@ -7,6 +7,14 @@ import {
   gg,
 } from '../index.js';
 
+// GCD function
+const gcd = (a, b) => {
+  if (!b) {
+    return a;
+  }
+  return gcd(b, a % b);
+};
+
 // Brain GCD
 getUserName();
 const brainGcd = () => {
@@ -21,14 +29,7 @@ const brainGcd = () => {
     const userAnswer = getAnswer();
     const answerUnified = Number(userAnswer);
 
-    const expression = (a, b) => {
-      if (!b) {
-        return a;
-      }
-      return expression(b, a % b);
-    };
-
-    const correctAnswer = expression(randomNumber, randomNumber2);
+    const correctAnswer = gcd(randomNumber, randomNumber2);
     const isCorrect = answerUnified === correctAnswer;
 
     result(isCorrect, userAnswer, correctAnswer);

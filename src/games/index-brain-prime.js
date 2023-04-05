@@ -6,6 +6,15 @@ import {
   gg,
 } from '../index.js';
 
+// IsPrime function
+
+const isPrime = (num) => {
+  for (let j = 2, k = Math.sqrt(num); j <= k; j += 1) {
+    if (num % j === 0) return false;
+  }
+  return num > 1;
+};
+
 // BRAIN PRIME
 
 const brainPrime = () => {
@@ -16,12 +25,6 @@ const brainPrime = () => {
     questionText(randomNumber);
     const answer = getAnswer();
     const answerUnified = answer.toLowerCase();
-    const isPrime = (num) => {
-      for (let j = 2, k = Math.sqrt(num); j <= k; j += 1) {
-        if (num % j === 0) return false;
-      }
-      return num > 1;
-    };
     const correctAnswer = isPrime(randomNumber) ? 'yes' : 'no';
     const isCorrect = answerUnified === correctAnswer;
 

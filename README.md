@@ -18,17 +18,18 @@ To be able to run these games you need to have **Node.JS** installed.
 
 ```
  git clone https://github.com/metastasio/frontend-project-44.git
- 
+
  cd frontend-project-44
 
  make install
 
  npm link
 ```
+
 <br>
 
-## **Games**  ##
-***
+## **Games**
+
 <br>
 
 ## Parity check
@@ -42,7 +43,7 @@ brain-even
 ```
 
 **Demo:**
-[![asciicast](https://asciinema.org/a/GKMssgNGXBNruGbxgYmtTuF5y.svg)](https://asciinema.org/a/GKMssgNGXBNruGbxgYmtTuF5y)
+[![asciicast](https://asciinema.org/a/mEMDQj700LDlkYUQvh1pOyqyh.svg)](https://asciinema.org/a/mEMDQj700LDlkYUQvh1pOyqyh)
 <br>
 <br>
 
@@ -57,7 +58,7 @@ brain-calc
 ```
 
 **Demo:**
-[![asciicast](https://asciinema.org/a/LBzHuMH4N7XJcNGyGrw64CVrj.svg)](https://asciinema.org/a/LBzHuMH4N7XJcNGyGrw64CVrj)
+[![asciicast](https://asciinema.org/a/Y8kXVjHnv0N4cfvyqPJE4TNEP.svg)](https://asciinema.org/a/Y8kXVjHnv0N4cfvyqPJE4TNEP)
 <br>
 <br>
 
@@ -72,13 +73,13 @@ brain-gcd
 ```
 
 **Demo:**
-[![asciicast](https://asciinema.org/a/G7LUehLbAbdVCG9l6W41GmSeH.svg)](https://asciinema.org/a/G7LUehLbAbdVCG9l6W41GmSeH)
+[![asciicast](https://asciinema.org/a/31WMswZ7ldT0PzqvzIcqL5J9M.svg)](https://asciinema.org/a/31WMswZ7ldT0PzqvzIcqL5J9M)
 <br>
 <br>
 
 ## Arithmetic progression
 
-In this game you will be given a random series of numbers that form an arithmetic progression with one number mission. You need to find the missing number.  
+In this game you will be given a random series of numbers that form an arithmetic progression with one number missing. You need to find the missing number.  
 <br>
 **To start the game:**
 
@@ -87,7 +88,7 @@ brain-progression
 ```
 
 **Demo:**
-[![asciicast](https://asciinema.org/a/wZN4DEbTo4hLt5jp4gNDflpAc.svg)](https://asciinema.org/a/wZN4DEbTo4hLt5jp4gNDflpAc)
+[![asciicast](https://asciinema.org/a/OH211aTeNRPHhHce2iHzIkKB0.svg)](https://asciinema.org/a/OH211aTeNRPHhHce2iHzIkKB0)
 <br>
 <br>
 
@@ -102,4 +103,4 @@ brain-prime
 ```
 
 **Demo:**
-[![asciicast](https://asciinema.org/a/gPDvWyohKlBlRK20qxzT199qI.svg)](https://asciinema.org/a/gPDvWyohKlBlRK20qxzT199qI)
+[![asciicast](https://asciinema.org/a/fr609Wfvc7gjV0ZqsVT5HBlBx.svg)](https://asciinema.org/a/fr609Wfvc7gjV0ZqsVT5HBlBx)
