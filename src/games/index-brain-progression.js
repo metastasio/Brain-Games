@@ -2,11 +2,13 @@ import {
   getRandomNumber,
   getAnswer,
   questionText,
-  result,
-  gg,
+  getResult,
+  congratulationText,
 } from '../index.js';
 
-const randomLine = () => {
+// Random Line Function
+
+const getRandomLine = () => {
   const randomNumber = getRandomNumber();
   let newLine = 0;
   const arr = [];
@@ -25,23 +27,23 @@ const brainProgression = () => {
   let i = 0;
 
   while (i < 3) {
-    const arrToReplace = randomLine();
+    const lineToReplace = getRandomLine();
     const randomIndex = getRandomNumber();
-    const correctAnswer = arrToReplace[randomIndex - 1];
-    arrToReplace[randomIndex - 1] = '..';
+    const correctAnswer = lineToReplace[randomIndex - 1];
+    lineToReplace[randomIndex - 1] = '..';
 
-    const currentExpression = arrToReplace.join(' ');
-    questionText(currentExpression);
+    const lineForUser = lineToReplace.join(' ');
+    questionText(lineForUser);
     const userAnswer = getAnswer();
     const answerUnified = Number(userAnswer);
     const isCorrect = answerUnified === correctAnswer;
 
-    result(isCorrect, userAnswer, correctAnswer);
+    getResult(isCorrect, userAnswer, correctAnswer);
     if (!isCorrect) {
       return;
     }
     i += 1;
   }
-  gg();
+  congratulationText();
 };
 export default brainProgression;

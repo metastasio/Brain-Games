@@ -2,9 +2,9 @@ import {
   getRandomNumber,
   getAnswer,
   questionText,
-  result,
+  getResult,
   getRandomSign,
-  gg,
+  congratulationText,
 } from '../index.js';
 
 // BRAIN CALC
@@ -26,12 +26,12 @@ const brainCalc = () => {
     const correctAnswer = Function(`return + ${currentExpression}`)();
     const isCorrect = answerUnified === correctAnswer;
 
-    result(isCorrect, userAnswer, correctAnswer);
+    getResult(isCorrect, userAnswer, correctAnswer);
     if (!isCorrect) {
       return;
     }
     i += 1;
   }
-  gg();
+  congratulationText();
 };
 export default brainCalc;

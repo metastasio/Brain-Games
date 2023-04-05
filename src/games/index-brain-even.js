@@ -2,8 +2,8 @@ import {
   getRandomNumber,
   getAnswer,
   questionText,
-  result,
-  gg,
+  getResult,
+  congratulationText,
 } from '../index.js';
 
 // BRAIN EVEN
@@ -21,13 +21,13 @@ const brainEven = () => {
     const correctAnswer = isEven ? 'yes' : 'no';
     const isCorrect = answerUnified === correctAnswer;
 
-    result(isCorrect, answerUnified, correctAnswer);
+    getResult(isCorrect, answerUnified, correctAnswer);
     if (!isCorrect) {
       return;
     }
     i += 1;
   }
-  gg();
+  congratulationText();
 };
 
 export default brainEven;

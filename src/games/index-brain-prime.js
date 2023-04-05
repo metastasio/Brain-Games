@@ -2,8 +2,8 @@ import {
   getRandomNumber,
   getAnswer,
   questionText,
-  result,
-  gg,
+  getResult,
+  congratulationText,
 } from '../index.js';
 
 // IsPrime function
@@ -28,13 +28,13 @@ const brainPrime = () => {
     const correctAnswer = isPrime(randomNumber) ? 'yes' : 'no';
     const isCorrect = answerUnified === correctAnswer;
 
-    result(isCorrect, answerUnified, correctAnswer);
+    getResult(isCorrect, answerUnified, correctAnswer);
     if (!isCorrect) {
       return;
     }
     i += 1;
   }
-  gg();
+  congratulationText();
 };
 
 export default brainPrime;

@@ -3,8 +3,8 @@ import {
   getAnswer,
   questionText,
   getUserName,
-  result,
-  gg,
+  getResult,
+  congratulationText,
 } from '../index.js';
 
 // GCD function
@@ -32,13 +32,13 @@ const brainGcd = () => {
     const correctAnswer = gcd(randomNumber, randomNumber2);
     const isCorrect = answerUnified === correctAnswer;
 
-    result(isCorrect, userAnswer, correctAnswer);
+    getResult(isCorrect, userAnswer, correctAnswer);
     if (!isCorrect) {
       return;
     }
     i += 1;
   }
-  gg();
+  congratulationText();
 };
 
 export default brainGcd;

@@ -38,7 +38,7 @@ const questionText = (task) => {
 
 // RESULT
 
-const result = (isCorrect, answerUnified, correctAnswer) => {
+const getResult = (isCorrect, answerUnified, correctAnswer) => {
   if (isCorrect) {
     console.log('Correct!');
   } else {
@@ -48,18 +48,18 @@ const result = (isCorrect, answerUnified, correctAnswer) => {
   }
 };
 
-// Congrats
-const gg = () => {
+// Congratulation text
+const congratulationText = () => {
   console.log(`Congratulations, ${userName}!`);
 };
 
 export {
   greetings,
   getUserName,
-  gg,
+  congratulationText,
   getRandomSign,
   getAnswer,
   getRandomNumber,
   questionText,
-  result,
+  getResult,
 };
