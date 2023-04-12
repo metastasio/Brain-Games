@@ -17,19 +17,8 @@ const getUserName = () => userName;
 // Get random number
 const getRandomNumber = () => Math.floor(Math.random() * 10) + 1;
 
-// Get random sign
-const getRandomSign = () => {
-  const arr = ['+', '-', '*'];
-  const i = Math.floor(Math.random() * arr.length);
-  const operator = arr[i];
-  return operator;
-};
-
 // Answers
-const getAnswer = () => {
-  const yourAnswer = readlineSync.question('Your answer: ');
-  return yourAnswer;
-};
+const getAnswer = () => readlineSync.question('Your answer: ');
 
 // QUESTIONS
 const questionText = (task) => {
@@ -37,7 +26,6 @@ const questionText = (task) => {
 };
 
 // RESULT
-
 const getResult = (isCorrect, answerUnified, correctAnswer) => {
   if (isCorrect) {
     console.log('Correct!');
@@ -57,7 +45,6 @@ export {
   greetings,
   getUserName,
   congratulationText,
-  getRandomSign,
   getAnswer,
   getRandomNumber,
   questionText,
