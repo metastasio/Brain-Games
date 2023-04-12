@@ -6,7 +6,6 @@ import {
   congratulationText,
 } from '../index.js';
 
-// BRAIN EVEN
 const brainEven = () => {
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
 

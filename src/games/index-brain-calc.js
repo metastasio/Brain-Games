@@ -3,11 +3,16 @@ import {
   getAnswer,
   questionText,
   getResult,
-  getRandomSign,
   congratulationText,
 } from '../index.js';
 
-// BRAIN CALC
+const getRandomSign = () => {
+  const arr = ['+', '-', '*'];
+  const i = Math.floor(Math.random() * arr.length);
+  const operator = arr[i];
+  return operator;
+};
+
 const brainCalc = () => {
   console.log('What is the result of the expression?');
 

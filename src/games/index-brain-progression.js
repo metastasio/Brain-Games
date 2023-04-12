@@ -6,8 +6,6 @@ import {
   congratulationText,
 } from '../index.js';
 
-// Random Line Function
-
 const getRandomLine = () => {
   const randomNumber = getRandomNumber();
   let newLine = 0;
@@ -20,7 +18,6 @@ const getRandomLine = () => {
   return arr;
 };
 
-// Brain Progression
 const brainProgression = () => {
   console.log('What number is missing in the progression?');
 

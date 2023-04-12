@@ -7,7 +7,6 @@ import {
   congratulationText,
 } from '../index.js';
 
-// GCD function
 const gcd = (a, b) => {
   if (!b) {
     return a;
@@ -15,7 +14,6 @@ const gcd = (a, b) => {
   return gcd(b, a % b);
 };
 
-// Brain GCD
 getUserName();
 const brainGcd = () => {
   console.log('Find the greatest common divisor of given numbers.');
