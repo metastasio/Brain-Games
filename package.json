@@ -2,7 +2,7 @@
   "name": "@hexlet/code",
   "type": "module",
   "version": "1.0.0",
-  "description": "[![Actions Status](https://github.com/metastasio/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/metastasio/frontend-project-44/actions)",
+  "description": "5 mini-games to train your brain",
   "main": "index.js",
   "bin": {
     "brain-games": "bin/brain-games.js",
