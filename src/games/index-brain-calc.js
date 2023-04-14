@@ -1,42 +1,25 @@
-import {
-  getRandomNumber,
-  getAnswer,
-  questionText,
-  getResult,
-  congratulationText,
-} from '../index.js';
+import runGame from '../index.js';
+import getRandomNumber from './utils.js';
+
+const task = () => {
+  console.log('What is the result of the expression?');
+};
 
 const getRandomSign = () => {
   const arr = ['+', '-', '*'];
-  const i = Math.floor(Math.random() * arr.length);
+  const i = getRandomNumber(0, 3);
   const operator = arr[i];
   return operator;
 };
 
-const brainCalc = () => {
-  console.log('What is the result of the expression?');
-
-  let i = 0;
-
-  while (i < 3) {
-    const sign = getRandomSign();
-    const randomNumber = getRandomNumber();
-    const randomNumber2 = getRandomNumber();
-    const currentExpression = `${randomNumber} ${sign} ${randomNumber2}`;
-
-    questionText(currentExpression);
-    const userAnswer = getAnswer();
-    const answerUnified = Number(userAnswer);
-    // eslint-disable-next-line no-new-func
-    const correctAnswer = Function(`return + ${currentExpression}`)();
-    const isCorrect = answerUnified === correctAnswer;
-
-    getResult(isCorrect, userAnswer, correctAnswer);
-    if (!isCorrect) {
-      return;
-    }
-    i += 1;
-  }
-  congratulationText();
+const gameFunction = () => {
+  const randomNumber = getRandomNumber();
+  const randomNumber2 = getRandomNumber();
+  const question = `${randomNumber} ${getRandomSign()} ${randomNumber2}`;
+  // eslint-disable-next-line no-new-func
+  const correctAnswer = String(Function(`return + ${question}`)());
+  return [question, correctAnswer];
 };
-export default brainCalc;
+export default () => {
+  runGame(task, gameFunction);
+};

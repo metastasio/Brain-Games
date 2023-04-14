@@ -1,10 +1,9 @@
-import {
-  getRandomNumber,
-  getAnswer,
-  questionText,
-  getResult,
-  congratulationText,
-} from '../index.js';
+import runGame from '../index.js';
+import getRandomNumber from './utils.js';
+
+const task = () => {
+  console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
+};
 
 const isPrime = (num) => {
   for (let j = 2, k = Math.sqrt(num); j <= k; j += 1) {
@@ -13,24 +12,12 @@ const isPrime = (num) => {
   return num > 1;
 };
 
-const brainPrime = () => {
-  console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
-  let i = 0;
-  while (i < 3) {
-    const randomNumber = getRandomNumber();
-    questionText(randomNumber);
-    const answer = getAnswer();
-    const answerUnified = answer.toLowerCase();
-    const correctAnswer = isPrime(randomNumber) ? 'yes' : 'no';
-    const isCorrect = answerUnified === correctAnswer;
-
-    getResult(isCorrect, answerUnified, correctAnswer);
-    if (!isCorrect) {
-      return;
-    }
-    i += 1;
-  }
-  congratulationText();
+const gameFunction = () => {
+  const question = getRandomNumber();
+  const correctAnswer = isPrime(question) ? 'yes' : 'no';
+  return [question, correctAnswer];
 };
 
-export default brainPrime;
+export default () => {
+  runGame(task, gameFunction);
+};
