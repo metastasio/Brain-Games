@@ -8,7 +8,7 @@
 
 Welcome to my first project!  
 Brain Games is a set of 5 games designed to challenge your mind.  
-A game is completed once you give 3 correct answers in a row. To exit a game simply run **CTRL + C**.
+A game is completed once you give 3 correct answers in a row. To exit a game simply enter **CTRL + C**.
 
 <br>
 
