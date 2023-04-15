@@ -5,7 +5,7 @@ const runGame = (task, gameFunction) => {
     'Welcome to the Brain Games!\nMay I have your name? ',
   );
   console.log(`Hello, ${userName}!`);
-  task();
+  console.log(task);
 
   const ROUNDS = 3;
   let i = 0;

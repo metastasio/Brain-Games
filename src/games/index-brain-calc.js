@@ -1,9 +1,7 @@
 import runGame from '../index.js';
 import getRandomNumber from './utils.js';
 
-const task = () => {
-  console.log('What is the result of the expression?');
-};
+const task = 'What is the result of the expression?';
 
 const getRandomSign = () => {
   const arr = ['+', '-', '*'];

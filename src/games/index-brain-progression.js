@@ -13,9 +13,7 @@ const getRandomLine = () => {
   return arr;
 };
 
-const task = () => {
-  console.log('What number is missing in the progression?');
-};
+const task = 'What number is missing in the progression?';
 
 const gameFunction = () => {
   const lineToReplace = getRandomLine();

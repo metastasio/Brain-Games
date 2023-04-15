@@ -1,9 +1,7 @@
 import runGame from '../index.js';
 import getRandomNumber from './utils.js';
 
-const task = () => {
-  console.log('Find the greatest common divisor of given numbers.');
-};
+const task = 'Find the greatest common divisor of given numbers.';
 
 const gcd = (a, b) => {
   if (!b) {

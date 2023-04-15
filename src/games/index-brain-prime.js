@@ -1,9 +1,7 @@
 import runGame from '../index.js';
 import getRandomNumber from './utils.js';
 
-const task = () => {
-  console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
-};
+const task = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const isPrime = (num) => {
   for (let j = 2, k = Math.sqrt(num); j <= k; j += 1) {
