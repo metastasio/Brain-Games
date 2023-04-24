@@ -11,15 +11,20 @@ const getRandomSign = () => {
 };
 
 const getExpression = (number1, sign, number2) => {
+  let expression;
   switch (sign) {
     case '+':
-      return number1 + number2;
+      expression = number1 + number2;
+      break;
     case '-':
-      return number1 - number2;
+      expression = number1 - number2;
+      break;
     case '*':
-      return number1 * number2;
+      expression = number1 * number2;
+      break;
     // no default
   }
+  return expression;
 };
 
 const gameFunction = () => {
