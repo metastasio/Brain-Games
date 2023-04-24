@@ -1,5 +1,5 @@
 import runGame from '../index.js';
-import getRandomNumber from './utils.js';
+import getRandomNumber from '../utils.js';
 
 const getRandomLine = () => {
   const randomNumber = getRandomNumber();
@@ -18,9 +18,9 @@ const task = 'What number is missing in the progression?';
 const gameFunction = () => {
   const lineToReplace = getRandomLine();
   const randomIndex = getRandomNumber();
+
   const correctAnswer = String(lineToReplace[randomIndex - 1]);
   lineToReplace[randomIndex - 1] = '..';
-
   const question = lineToReplace.join(' ');
   return [question, correctAnswer];
 };

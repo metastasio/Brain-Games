@@ -1,5 +1,7 @@
 import readlineSync from 'readline-sync';
 
+const ROUNDS = 3;
+
 const runGame = (task, gameFunction) => {
   const userName = readlineSync.question(
     'Welcome to the Brain Games!\nMay I have your name? ',
@@ -7,21 +9,17 @@ const runGame = (task, gameFunction) => {
   console.log(`Hello, ${userName}!`);
   console.log(task);
 
-  const ROUNDS = 3;
-  let i = 0;
-  while (i < ROUNDS) {
+  for (let i = 0; i < ROUNDS;) {
     const [question, correctAnswer] = gameFunction();
     console.log(`Question: ${question}`);
-
     const userAnswer = readlineSync.question('Your answer: ');
-    const userAnswerUnified = userAnswer.toLowerCase();
 
-    if (userAnswerUnified === correctAnswer) {
+    if (userAnswer.toLowerCase() === correctAnswer) {
       console.log('Correct!');
       i += 1;
     } else {
       console.log(
-        `'${userAnswerUnified}' is wrong answer ;(. Correct answer was '${correctAnswer}'.\nLet's try again, ${userName}!`,
+        `'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.\nLet's try again, ${userName}!`,
       );
       return;
     }
