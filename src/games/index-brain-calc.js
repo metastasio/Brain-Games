@@ -3,7 +3,7 @@ import getRandomNumber from '../utils.js';
 
 const task = 'What is the result of the expression?';
 
-const getRandomSign = () => {
+const getSign = () => {
   const signs = ['+', '-', '*'];
   const i = getRandomNumber(0, 3);
   const operator = signs[i];
@@ -22,19 +22,18 @@ const getExpression = (number1, sign, number2) => {
     case '*':
       expression = number1 * number2;
       break;
-    // no default
+    default:
+      throw new Error('Unknown operator!');
   }
   return expression;
 };
 
 const gameFunction = () => {
-  const randomNumber = getRandomNumber();
-  const randomNumber2 = getRandomNumber();
-  const sign = getRandomSign();
-  const question = `${randomNumber} ${sign} ${randomNumber2}`;
-  const correctAnswer = String(
-    getExpression(randomNumber, sign, randomNumber2),
-  );
+  const number = getRandomNumber();
+  const number2 = getRandomNumber();
+  const sign = getSign();
+  const question = `${number} ${sign} ${number2}`;
+  const correctAnswer = String(getExpression(number, sign, number2));
   return [question, correctAnswer];
 };
 export default () => {

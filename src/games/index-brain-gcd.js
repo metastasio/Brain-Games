@@ -11,10 +11,10 @@ const gcd = (a, b) => {
 };
 
 const gameFunction = () => {
-  const randomNumber = getRandomNumber();
-  const randomNumber2 = getRandomNumber();
-  const question = `${randomNumber} ${randomNumber2}`;
-  const correctAnswer = String(gcd(randomNumber, randomNumber2));
+  const number = getRandomNumber();
+  const number2 = getRandomNumber();
+  const question = `${number} ${number2}`;
+  const correctAnswer = String(gcd(number, number2));
   return [question, correctAnswer];
 };
 
